@@ -17,7 +17,7 @@
         <label for="email" id="email-label">Email<input type="email" id="email" name="email" placeholder="Enter your email" required></label>
       </fieldset>
       <fieldset>
-        <label for="number" id="number-label">On a scale from 1-10, how much do you love cats? <input type="number" id="number" name="number" min="3" max="120" placeholder="10" required>
+        <label for="number" id="number-label">On a scale from 1-10, how much do you love cats? <input type="number" id="number" name="number" min="1" max="10" placeholder="?" required>
       </fieldset>
       <fieldset>
         <label for="dropdown">Which option best describes your feline familiarity?<select id="dropdown" name="dropdown">
@@ -25,29 +25,34 @@
           <option>I used to be a cat parent</option>
           <option>I have never been a cat parent, but would like to be</option>
           <option>I don't have any interest in being a cat parent</option>
+          <option>Cats can't stay far enough away from me</option>
         </select>
         </fieldset>
-        <fieldset >
-          <p>Cats are the most supreme species on the planet
+        <fieldset>
+            <label for="picture">If you have one, please upload a picture of you and your furry friend! <input id="picture" type="file" name="file" value="upload"/></label>
+        </fieldset>
+        <fieldset id="boolean">
+          <p>Cats are the most magical creatures on the planet
           <label for="true"><input type="radio" id="true" name="boolean" class="inline" value="true">True</label>
-          <label for="false"><input type="radio" id="false" name="boolean"  value="false" class="inline">False
+          <label for="false"><input type="radio" id="false" name="boolean"  value="false" class="inline">False</label>
+        </p>
         </fieldset>
         <fieldset id="qualities">
-          <p>These are the best qualities of cats</p>
-          <input type="checkbox" value="1" class="inline"name="cuddles">Cuddles
-          <input type="checkbox" value="2" class="inline" name="purrs">Purrs
-          <input type="checkbox" value="3" class="inline" name="scratches">Scratches
+          <p>The best things about cats:</p>
+          <input type="checkbox" value="yes" class="inline"name="cuddles">Cuddles
+          <input type="checkbox" value="yes" class="inline" name="purrs">Purrs
+          <input type="checkbox" value="yes" class="inline" name="scratches">Scratches
           <br>
-          <input type="checkbox" value="4" class="inline" name="play">Play time
-          <input type="checkbox" value="5" class="inline" name="pets">Soft Pets
-          <input type="checkbox" value="6" class="inline" name="kisses">Kisses
+          <input type="checkbox" value="yes" class="inline" name="play">Play time
+          <input type="checkbox" value="yes" class="inline" name="pets">Soft Pets
+          <input type="checkbox" value="yes" class="inline" name="kisses">Kisses
           <br>
-          <input type="checkbox" value="7" class="inline" name="sassiness">Sassiness
-          <input type="checkbox" value="8" class="inline" name="independence">Independence
-          <input type="checkbox" value="9" class="inline" name="cuteness">Cuteness
+          <input type="checkbox" value="yes" class="inline" name="sassiness">Sassiness
+          <input type="checkbox" value="yes" class="inline" name="independence">Independence
+          <input type="checkbox" value="yes" class="inline" name="cuteness">Cuteness
         </fieldset>
         <fieldset>
-          <textarea id="more" value="more" name="more" placeholder="More about cats here"></textarea>
+          <textarea id="more" value="more" name="more" placeholder="Tell me more about you and cats!"></textarea>
         </fieldset>
         <button type="submit" id="submit">purrRrRrr</button>
       </form>
