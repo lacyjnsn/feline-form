@@ -13,14 +13,14 @@
         ~*purrmeowpurr*~</p>
     <form id="survey-form" method="POST" data-netlify="true">
      <fieldset>
-        <label for="name" id="name-label">Name<input type="text" id="name" placeholder="Enter your name" required></label>
-        <label for="email" id="email-label">Email<input type="email" id="email" placeholder="Enter your email" required></label>
+        <label for="name" id="name-label">Name<input type="text" id="name" placeholder="Enter your name" name="name" required></label>
+        <label for="email" id="email-label">Email<input type="email" id="email" name="email" placeholder="Enter your email" required></label>
       </fieldset>
       <fieldset>
-        <label for="number" id="number-label">On a scale from 1-10, how much do you love cats? <input type="number" id="number" min="3" max="120" placeholder="10" required>
+        <label for="number" id="number-label">On a scale from 1-10, how much do you love cats? <input type="number" id="number" name="number" min="3" max="120" placeholder="10" required>
       </fieldset>
       <fieldset>
-        <label for="dropdown">Which option best describes your feline familiarity?<select id="dropdown">
+        <label for="dropdown">Which option best describes your feline familiarity?<select id="dropdown" name="dropdown">
           <option>I am a cat parent</option>
           <option>I used to be a cat parent</option>
           <option>I have never been a cat parent, but would like to be</option>
@@ -34,20 +34,20 @@
         </fieldset>
         <fieldset id="qualities">
           <p>These are the best qualities of cats</p>
-          <input type="checkbox" value="1" class="inline">Cuddles
-          <input type="checkbox" value="2" class="inline">Purrs
-          <input type="checkbox" value="3" class="inline">Scratches
+          <input type="checkbox" value="1" class="inline"name="cuddles">Cuddles
+          <input type="checkbox" value="2" class="inline" name="purrs">Purrs
+          <input type="checkbox" value="3" class="inline" name="scratches">Scratches
           <br>
-          <input type="checkbox" value="4" class="inline">Play time
-          <input type="checkbox" value="5" class="inline">Soft Pets
-          <input type="checkbox" value="6" class="inline">Kisses
+          <input type="checkbox" value="4" class="inline" name="play">Play time
+          <input type="checkbox" value="5" class="inline" name="pets">Soft Pets
+          <input type="checkbox" value="6" class="inline" name="kisses">Kisses
           <br>
-          <input type="checkbox" value="7" class="inline">Sassiness
-          <input type="checkbox" value="8" class="inline">Independence
-          <input type="checkbox" value="9" class="inline">Cuteness
+          <input type="checkbox" value="7" class="inline" name="sassiness">Sassiness
+          <input type="checkbox" value="8" class="inline" name="independence">Independence
+          <input type="checkbox" value="9" class="inline" name="cuteness">Cuteness
         </fieldset>
         <fieldset>
-          <textarea placeholder="More about cats here"></textarea>
+          <textarea id="more" value="more" name="more" placeholder="More about cats here"></textarea>
         </fieldset>
         <button type="submit" id="submit">purrRrRrr</button>
       </form>
